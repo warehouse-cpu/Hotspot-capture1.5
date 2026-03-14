@@ -61,10 +61,6 @@ platforms:
       name: "澎湃新闻"
     - id: "cls-hot"
       name: "财联社热门"
-    - id: "jin10"
-      name: "金十数据"
-    - id: "zaobao"
-      name: "联合早报"
     - id: "ifeng"
       name: "凤凰网"
     - id: "toutiao"
@@ -130,24 +126,6 @@ rss:
       name: "bing人工智能"
       url: "https://www.bing.com/news/search?q=人工智能&format=RSS"
       max_age_days: 2
-
-    - id: "Bing Global Consulting"
-      name: "bing全球咨询"
-      url: "https://www.bing.com/news/search?q=全球新闻&format=RSS"
-      max_age_days: 2
-
-    - id: "Bing Technology"
-      name: "bing科技"
-      url: "https://www.bing.com/news/search?q=科技+编程&format=RSS"
-      max_age_days: 2
-
-
-
-
-
-
-
-
 
     # 自定义源示例
     # - id: "custom-feed"
@@ -439,7 +417,7 @@ ai:
   
   model: "dashscope/qwen3.5-plus"
 
-  api_key: "sk-32df620f6f014f8593e8e8cdc99a3ffe"                       # API Key（建议使用环境变量 AI_API_KEY）
+  api_key: ""                       # API Key（建议使用环境变量 AI_API_KEY）
   
   api_base: ""                      # 自定义 API 端点（可选，大多数情况留空）
                                     # 示例: https://api.openai.com/v1（自建代理或兼容接口）
