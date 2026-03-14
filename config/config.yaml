@@ -109,23 +109,11 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
-    - id: "hacker-news"
-      name: "Hacker News"
-      url: "https://hnrss.org/frontpage"
-
+  
     - id: "yahoo-finance"
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
 
-    - id: "Bing Finance"
-      name: "bing财经"
-      url: "https://www.bing.com/news/search?q=黄金价格+走势&format=RSS"
-      max_age_days: 2
-
-    - id: "Bing AI"
-      name: "bing人工智能"
-      url: "https://www.bing.com/news/search?q=人工智能&format=RSS"
-      max_age_days: 2
 
     # 自定义源示例
     # - id: "custom-feed"
