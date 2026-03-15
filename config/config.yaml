@@ -73,6 +73,9 @@ platforms:
       name: "抖音"
     - id: "zhihu"
       name: "知乎"
+    - id: "baidu"
+      name: "百度热搜"
+    
 
 
 
@@ -109,11 +112,18 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
-  
-    - id: "yahoo-finance"
+   - id: "hacker-news"
+      name: "Hacker News"
+      url: "https://hnrss.org/frontpage"
+      
+   - id: "yahoo-finance"
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
 
+   - id: "Bing AI"
+      name: "bing人工智能"
+      url: "https://www.bing.com/news/search?q=人工智能&format=RSS"
+      max_age_days: 1
 
     # 自定义源示例
     # - id: "custom-feed"
@@ -483,7 +493,7 @@ ai_analysis:
   mode: "follow_report"
 
   # 分析内容配置
-  max_news_for_analysis: 150        # 热榜+RSS 合计参与分析的新闻数量上限（控制成本关键项）
+  max_news_for_analysis: 50        # 热榜+RSS 合计参与分析的新闻数量上限（控制成本关键项）
                                     # 热榜优先占用配额，RSS 使用剩余配额；独立展示区不受此限制
                                     # 推送消息顶部会显示实际的 AI 分析数供参考
 
